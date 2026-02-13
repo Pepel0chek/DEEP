@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deeps</title>
+  <style>
+    body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #f8f9ff, #e6ecff);
+  color: #1a1e2b;
+  line-height: 1.6;
+}
+
+header {
+  background: #1e2b4f;
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #1e2b4f;
+  border-bottom: 3px solid #a0c4ff;
+  padding-bottom: 0.5rem;
+}
+
+ul {
+  background: #f0f4ff;
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
+  list-style-type: "✨ ";
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  background: #1e2b4f;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #2e3f6e;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(30,43,79,0.3);
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #4a5568;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Приветствую тебя. Ты попал на сайт о DeepSeek</h1>
+    <p>Этот сайт в котором вы можете перейти в DeepSeek и узнать о нем немного.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Немного об нем</h2>
+      <p>DeepSeek это ИИ который ответит на все ваши вопросы. Он может очень многое. Для просмотра функций посмотрите ниже.</p>
+    </section>
+
+    <section>
+      <h2>Что DeepSeek умеет</h2>
+      <ul>
+        <li>Он может обучить Вас спрограмированию на разных языках</li>
+        <li>Он может обучить Вас разным языкам мира</li>
+        <li>Он может писать для Вас текст, проверять его на ошибки и даже сайты для проверки не смогут проверить что этот текст написан через DeepSeek </li>
+        <li>DeepSeek может даже просто поговорить с Вами о разных вещах.</li>
+        <li>DeepSeek может Вам помочь с дз с работай или просто поможет Вам не заскучать.</li>
+        <li>DeepSeek может научить Вас почти что всему что угодно. Используйте DeepSeek с радостью.</li>
+      </ul>
+    </section>
+
+    <button id="DS">В DeepSeek</button>
+  </main>
+
+  <footer>
+    <p>Сделано специально для DeepSeek.</p>
+        <p>Копирование кода запрещено.</p>
+  </footer>
+</body>
+<script>
+  const button = document.getElementById('DS');
+
+document.getElementById('DS').addEventListener('click', function() {
+  window.location.href = 'https://chat.deepseek.com/sign_in';
+});
+</script>
+</html>
